@@ -1,0 +1,12 @@
+{
+  "name": "card-game",
+  "version": "1.0.0",
+  "main": "src/main.js",
+  "scripts": {
+    "test": "mocha tests/"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0"
+  }
+}
