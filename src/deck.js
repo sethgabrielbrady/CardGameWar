@@ -13,22 +13,31 @@
 
 
 
-// module.exports = // this needs to be added to so it can be exported
-function randomNumber(maxNumber){
+ // module.exports =
+ function buildDeck(maxNumber){
 
-  let deckArray = [2, 3, 4, 5, 6, 7, 8, 9, 10, 'J', 'Q', 'K', 'A'];
-  let draw = (Math.ceil(Math.random() * maxNumber) - 1)
+  let deck = [2, 3, 4, 5, 6, 7, 8, 9, 10, 'J', 'Q', 'K', 'A'];//array of cards
+  let draw;//rng
   let dealArray = [];
-  dealArray.push(deckArray[draw]);
-       console.log(dealArray);//output arrayContainer
-       return draw;
+  let countObj = {};
+
+  //I need to create a loop to add more values to the array
+  for(i=0; i<=52; i++){//loop
+    draw = (Math.ceil(Math.random() * maxNumber) - 1);//random number
+    dealArray.push(deck[draw]);
+        // countObj.draw = countObj[draw] + 1;
+          //
+          // draw = (Math.ceil(Math.random() * maxNumber) - 1);//this might not be needed
+          // i = i - 1;
+      }
+      // console.log(dealArray);
+      return dealArray;
+
+};
 
 
-
-
-}
-
-let output = randomNumber((13));
+// buildDeck(13);
+let output = buildDeck(13);
 console.log(output);
 
 

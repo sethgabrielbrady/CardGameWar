@@ -1,0 +1,110 @@
+HOMEWORK review
+
+
+keyword >> variable name >> assignmet operator >>value
+
+keyword + var name = declaration
+ variable do not have data values
+    only the value has a value.....
+
+assignment operator + value = assignment (assigning a value to a declaration)
+    instantiation is when a value is assigned at the time of declaration
+
+
+FUNCTIONAL PROGRAMMING
+  -the same input will give you the output
+
+  arguments are the needs defined for the FN - the parameters are the actual or
+      fill that need
+
+   keyword >> name >> arguments >> body === codeblock
+
+ ES6
+
+ ex)
+
+ function multiply (x=1, y=1){
+    //this says "if you give me an undefined value, the fn will set it to the assigned
+    // value";
+
+  return x +y;
+ }
+
+
+NEW STUFF  2/28/17
+
+OBJECTS and ARRAYS
+
+objects are value types
+    by def, they contain many values
+    objects contain 0 or more values
+    objects can contain other objects
+
+    you can access values within an object using "dot"syntax
+      console.log(object.valueName)
+
+  a dot signifies the thing o the left is an object
+
+  [] syntax == square bracket syntax
+
+  If you want to use a var when looking at object properties
+          YOU MUST use square brackets!!!!!
+  You can re-assign values to existing objects
+  you can add new properties to objects as well
+
+  you can add functionality to objects IE functions
+
+  'this' will act as the current object name but only within the object itself
+
+
+
+
+ARRAYS
+ created with [];
+ accessed with the position
+  arrays are accessed by their index-not position
+[]-brackets access values   (. dot syntax access names)
+
+push  -  adding something to the end of a collection
+  ie objects
+
+arrayName.push will add en entry to the end of array.
+
+.includes() will return a boolean about an argument
+
+ITERATION
+  doing something over and over again
+
+
+forEach() is a method-
+
+.split()  will split something with given parameters
+      when you split a string it will return an array
+
+
+      Useful Methods
+      There are a bunch of built-in methods that are available on arrays.
+      The full list is here, but understanding adding (push), removing (pop, shift, splice),
+      finding individual elements ([] operator), and finding the length (length)
+      will be a strong start.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+***********************************************************
