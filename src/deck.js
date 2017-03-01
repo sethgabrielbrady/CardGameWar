@@ -15,19 +15,21 @@
 
 // module.exports = // this needs to be added to so it can be exported
 function randomNumber(maxNumber){
-  let deckArray = [];
-  let draw;
-  deckArray.push((Math.ceil(Math.random() * maxNumber)));//RNG
-    console.log(deckArray);//output arrayContainer
+
+  let deckArray = [2, 3, 4, 5, 6, 7, 8, 9, 10, 'J', 'Q', 'K', 'A'];
+  let draw = (Math.ceil(Math.random() * maxNumber) - 1)
+  let dealArray = [];
+  dealArray.push(deckArray[draw]);
+       console.log(dealArray);//output arrayContainer
+       return draw;
+
+
+
 
 }
 
-let output = randomNumber(13);
+let output = randomNumber((13));
 console.log(output);
-
-
-
-
 
 
 
