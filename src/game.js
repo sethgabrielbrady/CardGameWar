@@ -17,20 +17,21 @@ module.exports = function war([player1, player2]){
   let p1Cards = [];
   let p2Cards =[];
   let now = new Date ();
+  let indexValues = [2, 3, 4, 5, 6, 7, 8, 9, 10, 'J', 'Q', 'K','A'];
 
 //pushes the shuffled cards into two seperate arrays for each player
-  for(i=0; i<(deck.length); i++){
+  for(let i=0; i<(deck.length); i++){//it would be better it iterate by 2 (i+=2) at one time
     p1Cards.push(deck[i]);
-      i++;
+      i++;//iterates to the next i
     p2Cards.push(deck[i]);
   }
 
 //compares the indexes of each player array
   for(j=0; j<p1Cards.length; j++){
       hands ++;
-    if (p1Cards[j] > p2Cards[j]){
+    if (indexValues.indexOf(p1Cards[j]) > indexValues.indexOf(p2Cards[j])){
       pOneWins++;
-      }else if (p1Cards[j] < p2Cards[j]){
+    }else if (indexValues.indexOf(p1Cards[j]) < indexValues.indexOf(p2Cards[j])){
           pTwoWins++;
       }else
           tie++;
@@ -55,6 +56,6 @@ let scoreSheet = {
 
 
     return scoreSheet;
-}
+};
 
-// war();
+// console.log (module.exports());

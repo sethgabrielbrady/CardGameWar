@@ -5,13 +5,13 @@
 module.exports = function buildDeck() {
     let shuffleAr = [];
     let card = 1;
-
+    let deck = [2, 3, 4, 5, 6, 7, 8, 9, 10, 'J', 'Q', 'K','A'];
 
     //creates an array of 52 cards counting from 2-14
-    for (j=0;j<13;j++){
+    for (let j=0;j<13;j++){
         card ++;
-      for(i=0; i <4; i++){
-
+      for( let i=0; i <4; i++){
+          // shuffleAr.push(card);
         if (card === 11){
             shuffleAr.push('J');
             }else if (card === 12){
@@ -29,7 +29,7 @@ module.exports = function buildDeck() {
 //shuffles the array
   let exchange;
   let temporary;
-  
+
     //this is the fisher-yates shuffle algorithm
     for (a = shuffleAr.length - 1; a > 0; a--) {//a is made equal to the length of the
         //the array of values - 1, and as long as a > 0, a will substract from its "value"
@@ -44,3 +44,6 @@ module.exports = function buildDeck() {
 
       return (shuffleAr);
 };
+
+
+// console.log (module.exports());

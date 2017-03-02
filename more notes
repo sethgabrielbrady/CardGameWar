@@ -97,6 +97,31 @@ forEach() is a method-
 
 
 
+HOMEWORK review*************************************************
+
+deck.js
+
+Converting the face value to numeric values
+  you can use index to to compare values. In my code, I could
+  change the var card to an array of card values, then iterate through
+  them to make my deck. As I iterate, change the value of the card inside
+  the deck .....but wouldnt' that be redundant?
+
+
+I could have also have switch ed the nested for loops to get 4 sets of 13
+
+DONT FORGET- AN ARRAY CAN STILL BE AN OBJECT!!!!
+IE CONSOLE.LOG IS A OBJECT AND LOG IS  A function
+
+RATHER THAN PUSH, I could have used .concat to add the card values to the array
+
+deck = deck.concat(array)- this would have been nest in a loop
+
+game.js
+
+I probably should have iterated by 2 rather than create 2 new arrays.
+
+++ always will add one more and save it to that values
 
 
 
