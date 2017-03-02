@@ -7,6 +7,7 @@
 let output = require('./deck.js');
 let deck = output();
 
+
 module.exports = function war([player1, player2]){
 
   let pOneWins = 0;
@@ -17,16 +18,12 @@ module.exports = function war([player1, player2]){
   let p2Cards =[];
   let now = new Date ();
 
-
 //pushes the shuffled cards into two seperate arrays for each player
-  for(i=0; i<deck.length; i++){
-      p1Cards.push(deck[i]);
-        i++;
-      p2Cards.push(deck[i]);
+  for(i=0; i<(deck.length); i++){
+    p1Cards.push(deck[i]);
+      i++;
+    p2Cards.push(deck[i]);
   }
-
-// console.log(p1Cards);
-// console.log(p2Cards);
 
 //compares the indexes of each player array
   for(j=0; j<p1Cards.length; j++){
@@ -40,8 +37,6 @@ module.exports = function war([player1, player2]){
    }
 
 //***************************************OBJECTS*******************
-
-
 let pOneObj = {
     name:player1,
     numberOfWins: pOneWins,
@@ -59,18 +54,7 @@ let scoreSheet = {
 };
 
 
-//***************************************TESTING*******************
-
-    // console.log(scoreSheet);
-    // // console.log(pTwoObj);
-    // // console.log(pOneObj);
-    //  console.log(deck.length);
-    // // console.log (deck);
-    // // console.log('Player 1 ' + pOneWins);
-    // // console.log('Player 2 ' + pTwoWins);
-    // // console.log('Ties ' + ties);
-    // console.log('Hands played ' + hands);
-      return scoreSheet;
+    return scoreSheet;
 }
 
 // war();
