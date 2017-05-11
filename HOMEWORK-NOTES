@@ -4,7 +4,7 @@ Creating the Pieces of the Game
       one for the ability to create a deck of cards (deck.js)
       and one to play the game of War (game.js).
 
-  For this assignment, you may NOT rename any files.
+For this assignment, you may NOT rename any files.
 
 deck.js file must export a single function which
     returns an array of shuffled card values.
@@ -15,6 +15,12 @@ To export a function, you simply place the function on the module.exports object
 
       module.exports = function buildDeck() { ... };
       (Note that you may name your function anything you wish.)
+
+
+
+
+
+
 
 Your game.js file must export a single function which accepts an array of
       2 names for the players and returns an object with some data in it (see below).

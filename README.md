@@ -1,11 +1,9 @@
 # Card Game
 
-A simple card game: War.
-
-03/01/17
+# The Card Game of War
+### 03/01/17
+###Seth Brady
 https://github.com/sethgabrielbrady/CardGameWar
 
-Seth Brady
 
-Game of War for Front End Class homework.
-The assignment focuses on array, objects, loops, modules, and constructors.
+Game of War written in Javascript for the front end class. The assignment focuses on arrays, objects, loops, modules, and constructors.

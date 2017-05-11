@@ -123,6 +123,8 @@ I probably should have iterated by 2 rather than create 2 new arrays.
 
 ++ always will add one more and save it to that values
 
+I can create another array containing the set of card, then compare the
+  the value of  of the (shuffleAr) at the index of my second array.
 
 
 
