@@ -1,8 +1,6 @@
-# Card Game
-
 # The Card Game of War
-### 03/01/17
-###Seth Brady
+##03/01/17
+### Seth Brady
 https://github.com/sethgabrielbrady/CardGameWar
 
 
