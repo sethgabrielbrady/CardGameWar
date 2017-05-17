@@ -1,7 +1,4 @@
 
-// Here we will use your `game.js` file to run a game. Feel free to change
-// things in here, but once you have created the game correctly, this file
-// should run as is.
 
 let game = require('./game.js');
 
