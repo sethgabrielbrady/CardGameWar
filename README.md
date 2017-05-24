@@ -1,10 +1,10 @@
 # The Card Game of War
-##03/01/17
+## 03/01/17
 ### Seth Brady
 https://github.com/sethgabrielbrady/CardGameWar
 
 
-Game of War written in Javascript for the front end class. The assignment focuses on arrays, objects, loops, modules, and constructors.
+Game of War written in Javascript for the front end class. The assignment focuses on arrays, objects, loops, modules, and constructors. Mocha and Chai are used for testing.
 
 To play, simply clone the repo and install the dependencies with ```npm install``` .
 This will install dev dependencies for ```Mocha``` and  ```Chai```.
