@@ -4,11 +4,11 @@ let output = require('./deck.js');
 let deck = output();
 
 /**
- * @param  {Array} players
- */
+* @param  {Array} players
+*/
 module.exports = function war(players){
 
-  if (players === undefined || !Array.isArray(players))  {
+  if (players === undefined || !Array.isArray(players)) {
     return "Must pass an array in the first posiition.";
   }
 
@@ -19,8 +19,6 @@ module.exports = function war(players){
   if (players[0] === players[1] || players[0] === players[1].toLowerCase() ){
     return "Must be two different players";
   }
-
-
 
   let p1Name = players[0];
   let p2Name = players[1];
@@ -51,7 +49,6 @@ module.exports = function war(players){
     }
   }
 
-
   let hour =  now.getHours();
   if (hour > 12){
     hour = '0' + hour % 12;
@@ -80,6 +77,5 @@ module.exports = function war(players){
     numberOfTies: tie
   };
 
-  // console.log(scoreSheet);
   return scoreSheet;
 };
