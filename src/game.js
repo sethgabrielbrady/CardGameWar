@@ -3,9 +3,27 @@
 let output = require('./deck.js');
 let deck = output();
 
+/**
+ * @param  {Array} players
+ */
+module.exports = function war(players){
 
-module.exports = function war([player1, player2]){
+  if (players === undefined || !Array.isArray(players))  {
+    return "Must pass an array in the first posiition.";
+  }
 
+  if (players.length <= 1 || players.length > 2){
+    return "Must only be two players";
+  }
+
+  if (players[0] === players[1] || players[0] === players[1].toLowerCase() ){
+    return "Must be two different players";
+  }
+
+
+
+  let p1Name = players[0];
+  let p2Name = players[1];
   let pOneWins = 0;
   let pTwoWins = 0;
   let tie = 0;
@@ -25,34 +43,43 @@ module.exports = function war([player1, player2]){
   for(j=0; j<p1Cards.length; j++){
     hands ++;
     if (indexValues.indexOf(p1Cards[j]) > indexValues.indexOf(p2Cards[j])){
-      console.log('Game: ', hands );
-      console.log('Jordan wins with a:', p1Cards[j], ' versus Russell\'s: ', p2Cards[j]);
       pOneWins++;
-
     }else if (indexValues.indexOf(p1Cards[j]) < indexValues.indexOf(p2Cards[j])){
-      console.log('Game: ', hands );
-      console.log('Russel wins with a:', p2Cards[j], ' versus Jordan\'s: ', p1Cards[j]);
       pTwoWins++;
     }else{
       tie++;
     }
   }
 
+
+  let hour =  now.getHours();
+  if (hour > 12){
+    hour = '0' + hour % 12;
+  }
+
+  let minutes = now.getMinutes();
+  if (minutes < 10){
+    minutes = '0' + minutes;
+  }
+
   let pOneObj = {
-    name:player1,
+    name:players[0],
     numberOfWins: pOneWins,
     winRatio:(pOneWins / hands).toFixed(2)
   };
+
   let pTwoObj = {
-    name:player2,
+    name:players[1],
     numberOfWins: pTwoWins,
     winRatio:(pTwoWins / hands).toFixed(2)
   };
+
   let scoreSheet = {
-    date: now.getMonth() + 1 + '-' + now.getDate() + '-' + now.getFullYear() + ' at ' + now.getHours() + ':' + now.getMinutes(),
-    players: [pOneObj , pTwoObj],
+    date: now.getMonth() + 1 + '-' + now.getDate() + '-' + now.getFullYear() + ' at ' + hour + ':' + minutes,
+    players:[pOneObj, pTwoObj],
     numberOfTies: tie
   };
 
+  // console.log(scoreSheet);
   return scoreSheet;
 };

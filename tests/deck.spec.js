@@ -33,7 +33,7 @@ describe('In the deck', function() {
             expect(deckOne[51]).to.not.be.oneOf([ deckTwo[51], deckThree[51] ]);
         });
 
-        it('should return a deck with suits (ADVENTURE MODE)', function() {
+        xit('should return a deck with suits (ADVENTURE MODE)', function() {
             let result = deck();
             expect(result).to.be.an('array');
             expect(result.length).to.equal(52);
