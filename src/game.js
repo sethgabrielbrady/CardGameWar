@@ -9,15 +9,15 @@ let deck = output();
 module.exports = function war(players){
 
   if (players === undefined || !Array.isArray(players)) {
-    return "Must pass an array in the first position.";
+    return 'Must pass an array in the first position.';
   }
 
   if (players.length !== 2){
-    return "Must be an array with only two indexes";
+    return 'Must be an array with only two indexes';
   }
 
-  if (players[0] === players[1] || players[0] === players[1].toLowerCase() ){
-    return "Must not have indexes with the same value";
+  if (players[0] === players[1] || players[0] === players[1].toLowerCase()){
+    return 'Must not have indexes with the same value';
   }
 
   let p1Name = players[0];
